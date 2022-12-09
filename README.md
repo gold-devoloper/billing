@@ -194,15 +194,23 @@ Implement the listener to handle event results and errors:
         });
 	
 
-		Purchase a non-consumable/consumable product:
+Purchase a non-consumable/consumable product:
+
 		billingConnector.purchase(this, "product_id");
-		Purchase a subscription with a base plan:
+		
+Purchase a subscription with a base plan:
+
 		billingConnector.subscribe(this, "product_id");
-		Purchase a subscription with multiple offers:
+		
+Purchase a subscription with multiple offers:
+
 		billingConnector.subscribe(this, "product_id", 0);
 		billingConnector.subscribe(this, "product_id", 1);
-		Cancel a subscription:
+		
+Cancel a subscription:
+
 		billingConnector.unsubscribe(this, "product_id");
+		
 Release instance
 To avoid memory leaks don't forget to release the BillingConnector instance when it's no longer needed.
 	
